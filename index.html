@@ -9,7 +9,27 @@
 <body>
     <main>
         <div class="Container">
-            
+            <div class="selector">
+                <form>
+                    <label for="color-picker">Pick a color</label>
+                    <input type="color" name="color-picker" id="color-picker">
+                    <label for="mode">Select a mode</label>
+                    <select name="mode" id="mode">
+                        <option value="monochrome">Monochrome</option>
+                        <option value="monochrome-dark">Monochrome Dark</option>
+                        <option value="monochrome-light">Monochrome Light</option>
+                        <option value="analogic">Analogic</option>
+                        <option value="complement">Complement</option>
+                        <option value="analogic-complement">Analogic Complement</option>
+                        <option value="triad">Triad</option>
+                        <option value="quad">Quad</option>
+                    </select>
+                    <button id="getBtn">Get Colo Palate</button>
+                </form>
+            </div>
+            <div class="colors">
+
+            </div>
         </div>
     </main>
     <script src="index.js"></script>
