@@ -8,11 +8,13 @@
 </head>
 <body>
     <main>
-        <div class="Container">
-            <div class="selector">
-                <form>
+        <div class="container">
+            <form>
+                <div>
                     <label for="color-picker">Pick a color</label>
                     <input type="color" name="color-picker" id="color-picker">
+                </div>
+                <div>
                     <label for="mode">Select a mode</label>
                     <select name="mode" id="mode">
                         <option value="monochrome">Monochrome</option>
@@ -24,9 +26,9 @@
                         <option value="triad">Triad</option>
                         <option value="quad">Quad</option>
                     </select>
-                    <button id="getBtn">Get Colo Palate</button>
-                </form>
-            </div>
+                </div>
+                <button id="getBtn">Get Color Palette</button>
+            </form>
             <div class="colors">
 
             </div>
