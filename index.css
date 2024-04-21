@@ -17,6 +17,7 @@ body {
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
+    z-index: 1;
 }
 
 form {
@@ -34,7 +35,12 @@ form {
 
 form label, form input, form select {
     display: block;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
+}
+
+form label {
+    /* margin-left: 5px; */
+    margin-right: 5px;
 }
 
 form select, form input  {
@@ -83,6 +89,11 @@ form > div {
 }
 
 #copy {
-    margin: 8px ;
+    margin: 0;
+    padding: 8px;
     color: rgb(32, 32, 32);
+    width: 100%;
+    max-width: 600px;
+    background-color: rgb(234, 234, 234);
+    text-align: center;
 }
