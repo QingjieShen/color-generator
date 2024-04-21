@@ -10,12 +10,12 @@ getBtn.addEventListener('click', (e) => {
     e.preventDefault()
     const colorId = color.value
     const modeId = mode.value
-    console.log(colorId.slice(1), modeId)
+    // console.log(colorId.slice(1), modeId)
     const finalUrl = `${baseUrl}?hex=${colorId.slice(1)}&mode=${modeId}`
     async function getColorScheme() {
         const res = await fetch(finalUrl, {method: "GET"})
         const data = await res.json()
-        console.log(data)
+        // console.log(data)
         setColor(data.colors)
     }
 
@@ -36,7 +36,7 @@ function setColor(colors) {
 }
 
 colorsContainer.addEventListener('click', (e) => {
-    console.log(e.target)
+    // console.log(e.target)
     if (e.target.classList.contains('color')) {
         navigator.clipboard.writeText(e.target.dataset.hex)
         copyText.textContent = `${e.target.dataset.hex} copied`
